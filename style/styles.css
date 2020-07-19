@@ -1,0 +1,766 @@
+/*
+    THINGS  TO  DO: 
+    - take the ids from index.html (i.e. "work-ikea)
+    - add it to this page
+    - Add colour when hover on navigation links "About" & "Contact". 
++++++++++++++++++++++
+    example: 
+
+#work-???? {
+    background-image: url([ADDIMAGEURLHERE]); 
+    background-size: 200%; 
+}
+
+#work-????:hover {
+    background-size: 250%; 
+}
+
+ */
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+    /* Change Background colour here */
+    background-color: #151515; 
+    font-family: 'Lato', sans-serif;
+    display: flex; 
+    flex-direction: column; 
+    /* font-size: min(max(16px, 4vw), 22px); */
+    font-size: 14px;  
+}
+
+main {
+    margin-top: 60px; 
+}
+
+.navwidth {
+    width:100%;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center; 
+    position: fixed; 
+    /* Change colour of navigation here */
+    background-color: #000000; 
+    z-index: 10;
+}
+
+/* This is where I added my Contact Form in style.css */
+
+.contactform {
+    margin: 10px;
+    align-items: center; 
+    text-align: center; 
+    color: #ffffff; 
+}
+
+.bigcontentwidth{
+    max-width:2000px;
+}
+
+.contentwidth {
+    margin-top: 5%;
+}
+
+.align {
+    /* width: 80%;  */
+    margin: 0 auto; 
+}
+
+.sectionTitle {
+    color: white; 
+    padding: 0.75rem; 
+}  
+
+.title,.city {
+    color:  #FE8A01; 
+}
+
+.wrapper {
+    width: 100%; 
+    overflow: hidden; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2%;
+    position: relative; 
+}
+
+.arrowButtonSection {
+    padding: 2.5em 0; 
+}
+.arrowButton {
+    color: whitesmoke; 
+    background-color: #637589;
+    padding: 0.5em 1em; 
+    text-decoration: none;
+    font-weight: bold; 
+    font-size: 1.25em; 
+    margin-right: 1rem; 
+}
+
+.text, .text2 {
+    width: 75%; 
+    justify-self: center;
+    color: white; 
+    padding: 0px 1rem; 
+    /* background-color: #222;  */
+}
+
+/* .video, .video2, .video3 {
+    width: 66%; 
+    float: left; 
+    background-color: #151515; 
+
+} */
+
+.video {
+    width: 75%;
+    padding: 0 1rem 0 0;
+    border: none; 
+}
+
+.text2, .video2 {
+    float: right; 
+}
+
+.images {
+    width: 75%;
+    padding: 0 1rem 0 0;
+    border: none; 
+    text-align: center;
+}
+
+.navgroup {
+    padding-right: 2rem; 
+}
+
+.navlink {
+    color: white; 
+    text-decoration: none; 
+    padding-left: 1.5em; 
+}
+
+.navlink:hover {
+    /* Change colour of navigation link hover here. */
+    color: #FE8A01;
+    text-decoration: underline;  
+}
+
+.currentPage {
+    color:  #FE8A01; 
+}
+
+/* Once I add logo delete lines 157-167. */
+.myname a, .myname a:visited, .myname a:active {
+    text-decoration: none;
+    transition: color 300ms; 
+    color: white; 
+    padding-left: 1.5rem; 
+}
+
+.myname a:hover {
+    /* Change colour of my name here when hovered. */
+    color: #FE8A01;
+}
+
+/* container that holds your on works */
+.works {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column-gap: 10px; 
+    grid-row-gap: 5px;
+    position: relative; 
+}
+
+.work {
+    position: relative;
+    width: 100%; 
+    height: 300px;    
+    overflow: hidden;  
+}
+
+.thumbnail-images {
+    background-position: center; 
+    border: 2px #151515 solid; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover; 
+    border-right: 0; 
+    background-clip: border-box; 
+    transition: all 0.3s;     
+    width: 100%; 
+    height: 100%; 
+}
+
+.work:hover .thumbnail-images {
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #000;
+}
+
+.work:hover .overlay {
+    opacity: 0.5;
+}
+
+.thumbnail-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;    
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;    
+}
+
+.work:hover .thumbnail-text {
+    opacity: 1;
+}
+
+/* Motion Design Section */
+
+#work-2d-demo-reel {
+    background-image: url(../images/Circle-2D-small.jpg); 
+    background-size: 200%;    
+}
+
+#work-2d-demo-reel:hover {
+    background-size: 250%;    
+}
+
+#work-3d-demo-reel {
+    background-image: url(../images/3D-Reel-small.jpg); 
+    background-size: 200%;    
+}
+
+#work-3d-demo-reel:hover {
+    background-size: 250%;    
+}
+
+#work-package {
+    background-image: url(../images/Sony-Lower-Third_3-small.jpg);  
+    background-size: 200%;     
+}
+
+#work-package:hover {
+    background-size: 225%;       
+}
+
+#work-cibc-globe {
+    background-image: url(../images/CIBC-Globe-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-cibc-globe:hover {
+    background-size: 250%; 
+}
+
+/* May need to change background size between 200-250% */
+
+/* Videography Section */
+
+#work-mural {
+    background-image: url(../images/Mural-small.jpg); 
+    background-size: 200%;    
+}
+
+#work-mural:hover {
+    background-size: 250%;    
+}
+
+#work-mural {
+    background-image: url(../images/Mural-small.jpg); 
+    background-size: 200%;    
+}
+
+#work-mural:hover {
+    background-size: 250%;    
+}
+
+#work-musician-interview  {
+    background-image: url(../images/Musician-Interview-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-musician-interview:hover {
+    background-size: 250%; 
+}
+
+#work-film-shots  {
+    background-image: url(../images/Carousel-Film-Shots-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-film-shots:hover {
+    background-size: 250%; 
+}
+
+#work-pitch-video {
+    background-image: url(../images/Pitch-Video-small.jpg); 
+    background-size: 200%;
+}
+
+#work-pitch-video:hover {
+    background-size: 250%; 
+}
+
+/* Multimedia Section */
+
+#work-bc-dairy {
+    background-image: url(../images/BC-Dairy-small.jpg);
+    background-size: 200%; 
+}
+
+#work-bc-dairy { 
+    background-size: 250%; 
+}
+
+#work-landing {
+    background-image: url(../images/Landing-small.jpg); 
+    background-size: 200%; 
+    -o-background-size: 200%; 
+    -o-background-image: url(../images/Landing-small.jpg); 
+}
+
+#work-landing:hover {
+    background-size: 250%; 
+}
+
+#work-advertisement {
+    background-image: url(../images/Apple-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-advertisement:hover {
+    background-size: 250%; 
+}
+
+#work-mtv {
+    background-image: url(../images/mtv-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-mtv:hover {
+    background-size: 250%; 
+}
+
+#work-typography-illustration {
+    background-image: url(../images/Typography-Illustration-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-typography-illustration:hover {
+    background-size: 250%; 
+}
+
+#work-song-lyrics {
+    background-image: url(../images/Song-Lyric-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-song-lyrics:hover {
+    background-size: 250%; 
+}
+
+#work-ford-banner {
+    background-image: url(../images/Ford-Banner-small.jpg);
+    background-size: 200%; 
+}
+
+#work-ford-banner:hover {
+    background-size: 250%; 
+}
+
+#work-redrun {
+    background-image: url(../images/RedRun-Album-Cover-small.jpg); 
+    background-size: 200%; 
+}
+
+#work-redrun:hover {
+    background-size: 250%; 
+}
+
+/* add ids above this line */
+
+/* ABOUT PAGE */
+
+.about-wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    padding: 3rem 0; 
+}
+
+.about-image {
+    margin: 0 auto;
+    width: 80%; 
+    padding:  1rem; 
+}
+
+.titleRed {
+    color: #FE8A01; 
+}
+
+.aboutParagraph {
+    color: white; 
+    height: 73vh; 
+    padding: 3% 10% 0%;
+    font-size: 1.5em;
+}
+
+.resumeLink {
+    color: #FE8A01; 
+}
+
+/* Foody Fresh Landing Page Page */
+.landing-page-images {
+    width: auto;  
+    height: auto; 
+}
+
+/* Mobile Advertisement Page */
+
+.mobile-advertisement-images {
+    width: 65%;  
+    height: auto; 
+}
+
+/* MTV Page */
+
+.mtv-images {
+    width: 75%;
+    height: auto; 
+    padding-bottom: 1rem; 
+}
+
+/* Typography Illustration Page */
+
+.illustration-images {
+    width: auto;  
+    height: auto; 
+}
+
+/* Website Style Guide Page */
+
+/* BC Dairy - Website Landing Page */ 
+
+.bc-dairy-images {
+    width: auto;  
+    height: auto; 
+}
+
+.guide-images {
+    width: auto;
+    height: auto; 
+}
+
+/* Song Lyric Page */
+
+.lyrics-images {
+    width: 77%;
+    height: auto; 
+}
+
+/* APP AID Logo Page */
+
+.aid-images  {
+    width: auto; 
+    height: auto; 
+}
+
+/* Red Run Album Art Covers Page */
+
+.album-images {
+    width: 95%;  
+    height: auto;  
+    padding-bottom: 1rem; 
+}
+
+/* Interests Page  */
+
+.heaven-images {
+    width: 85%;
+    height: auto; 
+    padding-bottom: 1rem; 
+}
+
+#acting-section {
+    padding-left: 1rem;
+}
+
+.interests-art-photo {
+    position: absolute; 
+}
+
+#photo-art-section {
+    padding-left: 1rem;
+}
+
+.photo-art-Paragraph {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white; 
+    height: 20vh; 
+    padding: 3% 8.75% 0%;
+    font-size: 1.5em;
+    margin-left: 435.5px; 
+}
+
+.video-interests {
+    position: relative; 
+    top: 30%;
+    /* change left for moving video more to the left */
+    /* left: 46%;  */
+    left: 51%; 
+    transform: translate(-50%, -50%);
+    width: 50%; 
+}
+
+.video-art-photo {
+    margin-top: 480px; 
+    position: relative; 
+}
+
+.interests-modelling {
+    margin-top: -200px; 
+}
+
+#modelling-section {
+    padding-left: 1rem;
+}
+
+.modellingParagraph {
+    color: white; 
+    height: 20vh; 
+    padding: 3% 10% 0%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Image Grid - Code Added here. */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 4px;
+    
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/* Image  - Code Ends Here. */
+
+/* RESPONSIVENESS */
+
+/* Responsive Images */
+
+.responsive {
+    width: 100%;
+    height: auto; 
+}
+
+/* This is the Contact Form - Rob helped me with. */
+#contact {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    color: #fff;
+    align-content: start;
+    min-height: calc(100vh - (100px + 40px));
+    padding-top: 100px;
+  }
+  
+  #contact > * {
+    grid-column: 2;
+  }
+  
+  form {
+    margin: 10px 0;
+    color: white;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    color: #000000;
+    background: #e9eaea;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 8px 0 8px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    color: #000000;
+  }
+  
+  textarea {
+    padding-top: 5px;
+  }
+  
+  label {
+    display: block;
+  }
+  label.error {
+    margin-bottom: 20px;
+    visibility: hidden;
+    color: red;
+  }
+  
+  #submit {
+    width: 120px;
+    background: #637589;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* This is the end of the contact form Rob helped me with. */
+
+/* when website is tablet... */
+@media screen and (max-width: 1000px){
+    .works {
+        grid-template-columns: 1fr 1fr; 
+    } 
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 5%;
+    }    
+    
+    .text, .text2, {
+        width: 80%; 
+    }
+
+    .modellingParagraph {
+        font-size: 1em; 
+    }
+
+    .video   {
+        /* width: 100%; */
+        justify-self: center; 
+        padding: 1rem 0; 
+        border: none; 
+    }
+
+    /* .video-interests {
+        justify-self: center; 
+        padding: 1rem 0; 
+        border: none; 
+    } */
+
+    /* Add video-interests here */
+    /* .video-interests {
+        position: relative; 
+        top: 50%;
+        /* change left for moving video more to the left */
+        /* left: 46%; 
+        transform: translate(-50%, -50%);
+        width: 50%; 
+    } */ 
+
+    .about-wrapper {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+
+}
+/* when website is mobile... */
+@media screen and (max-width: 500px){
+
+    .works {
+        grid-template-columns: 1fr; 
+    }
+
+    .aboutParagraph {
+        font-size: 1em;
+    }
+
+    .modellingParagraph {
+        font-size: 1em; 
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 20%;
+    }
+
+    .video {
+        width: 100%;
+        justify-self: center;
+        padding: 1rem 0; 
+        border: none; 
+    }
+
+    .about-wrapper {
+        grid-template-columns: 1fr; 
+    }
+
+}
+
+/* Added Footer */
+
+#footerTags {
+    font-size: 20px; 
+}
+
+footer {
+    margin-top: 40px; 
+    padding-top:10px;
+    padding-bottom: 10px; 
+    text-align: center; 
+    color: white; 
+    width: 100%;
+}
