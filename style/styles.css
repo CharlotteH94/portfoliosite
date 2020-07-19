@@ -504,7 +504,7 @@ main {
 }
 
 .interests-art-photo {
-    position: absolute; 
+    
 }
 
 #photo-art-section {
@@ -518,26 +518,20 @@ main {
     height: 20vh; 
     padding: 3% 8.75% 0%;
     font-size: 1.5em;
-    margin-left: 435.5px; 
+    text-align:center;
 }
 
 .video-interests {
-    position: relative; 
-    top: 30%;
-    /* change left for moving video more to the left */
-    /* left: 46%;  */
-    left: 51%; 
-    transform: translate(-50%, -50%);
-    width: 50%; 
+	max-width:60%;
+	margin: 0 auto;
 }
 
 .video-art-photo {
-    margin-top: 480px; 
-    position: relative; 
+   
 }
 
 .interests-modelling {
-    margin-top: -200px; 
+    margin-top:100px;
 }
 
 #modelling-section {
@@ -546,7 +540,6 @@ main {
 
 .modellingParagraph {
     color: white; 
-    height: 20vh; 
     padding: 3% 10% 0%;
     font-size: 1.5em;
     text-align: center;
