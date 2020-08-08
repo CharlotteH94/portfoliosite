@@ -396,6 +396,51 @@ main {
     background-size: 250%; 
 }
 
+/* UX & UI Section */
+#work-app-aid {
+    background-image: url(../images/APP-AID-APP-small.jpg); 
+    background-size: 200%; 
+    -o-background-size: 200%; 
+    -o-background-image: url(../images/APP-AID-APP-small.jpg); 
+}
+
+#work-app-aid:hover {
+    background-size: 250%; 
+}
+
+#work-live-on {
+    background-image: url(../images/LIVE-ON_small.jpg); 
+    background-size: 200%; 
+    -o-background-size: 200%; 
+    -o-background-image: url(../images/LIVE-ON_small.jpg); 
+}
+
+#work-live-on:hover {
+    background-size: 250%; 
+}
+
+#work-humber-tracker {
+    background-image: url(../images/HUMBER-TRACKER-small.jpg); 
+    background-size: 200%; 
+    -o-background-size: 200%; 
+    -o-background-image: url(../images/HUMBER-TRACKER-small.jpg); 
+}
+
+#work-humber-tracker:hover {
+    background-size: 250%; 
+}
+
+#work-bikes {
+    background-image: url(../images/BIKES-T.O.-small.jpg); 
+    background-size: 200%; 
+    -o-background-size: 200%; 
+    -o-background-image: url(../images/BIKES-T.O.-small.jpg); 
+}
+
+#work-bikes:hover {
+    background-size: 250%; 
+}
+
 /* add ids above this line */
 
 /* ABOUT PAGE */
