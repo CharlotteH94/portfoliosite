@@ -732,15 +732,10 @@ main {
         font-size: 1em; 
     }
 
-    .video   {
-        /* width: 100%; */
-        justify-self: center; 
-        padding: 1rem 0; 
-        border: none; 
-    }
 
-    .video-feature {
-        width: 100%;  
+    .feature-video, .video {
+        width: 80%;
+        margin: 0 auto;  
     }
 
     /* .video-interests {
@@ -750,14 +745,16 @@ main {
     } */
 
     /* Add video-interests here */
-    /* .video-interests {
+    /*
+     .video-interests {
         position: relative; 
         top: 50%;
-        /* change left for moving video more to the left */
-        /* left: 46%; 
+        change left for moving video more to the left
+        left: 46%; 
         transform: translate(-50%, -50%);
         width: 50%; 
-    } */ 
+    }
+     */ 
 
     .about-wrapper {
         grid-template-columns: 1fr 1fr; 
@@ -765,9 +762,16 @@ main {
 
 
 }
+
+
 /* when website is mobile... */
 @media screen and (max-width: 500px){
-
+	
+	.feature-video {
+        width:100%; 
+    }
+	
+	
     .works {
         grid-template-columns: 1fr; 
     }
