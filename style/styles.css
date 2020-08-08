@@ -122,6 +122,12 @@ main {
     border: none; 
 }
 
+.feature-video {
+    width: 70%; 
+    margin: 0 auto; 
+    margin-top: 20px;
+}
+
 .text2, .video2 {
     float: right; 
 }
@@ -718,7 +724,7 @@ main {
         margin-top: 5%;
     }    
     
-    .text, .text2, {
+    .text, .text2 {
         width: 80%; 
     }
 
@@ -731,6 +737,10 @@ main {
         justify-self: center; 
         padding: 1rem 0; 
         border: none; 
+    }
+
+    .video-feature {
+        width: 100%;  
     }
 
     /* .video-interests {
