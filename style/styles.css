@@ -437,7 +437,7 @@ main {
 }
 
 #work-bikes {
-    background-image: url(../images/BIKES-T.O.-small.jpg); 
+    background-image: url(../images/BIKES-T.O.-Map-small.jpg); 
     background-size: 200%; 
     -o-background-size: 200%; 
     -o-background-image: url(../images/BIKES-T.O.-small.jpg); 
@@ -728,6 +728,10 @@ main {
         width: 80%; 
     }
 
+    p {
+        font-size: 17px;
+    }
+
     .modellingParagraph {
         font-size: 1em; 
     }
@@ -770,7 +774,6 @@ main {
 	.feature-video {
         width:100%; 
     }
-	
 	
     .works {
         grid-template-columns: 1fr; 
